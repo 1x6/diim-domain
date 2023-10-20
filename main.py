@@ -4,9 +4,9 @@ import os
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/.well-known/discord')
 def index():
-    return jsonify({"Choo Choo": "Welcome to your Flask app 🚅"})
+    return 'dh=b24e55f63476d9c315b548017767722178647a36'
 
 
 if __name__ == '__main__':
